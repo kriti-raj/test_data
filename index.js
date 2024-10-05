@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", async (req, res) => {
-    const response = await axios.get("https://directory.cookieyes.com/api/v1/ip");
+    const response = await axios.get("https://nordvpn.com/wp-admin/admin-ajax.php?action=get_user_info_data");
     console.log(response.data);
     res.send("Thank you for using my app");
     // res.json({
